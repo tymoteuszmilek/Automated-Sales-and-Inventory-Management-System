@@ -49,7 +49,7 @@ You have two options to set up the database:
 
 ## Stored Procedures
 
-The following stored procedures are included in the system to manage ordering/automated ordering and analysis.
+The following stored procedures are included in the system to manage ordering/automated ordering and analysis:
 
 1. **`CreateOrder`**  
 - **Description**: Creates a new order for a given product ID.  
@@ -74,6 +74,17 @@ The following stored procedures are included in the system to manage ordering/au
    ```sql
    EXEC GenerateWeeklySalesReport;
    ```
+
+## Triggers
+
+The following triggers are implemented in the system to automate certain actions based on changes to the data:
+
+1. **`trg_AfterInsertSales`** - Creates an invoice automatically after a sale is completed.
+2. **`LowStockTrigger`** - Notifies the system when a product's stock level falls below the predefined threshold.
+3. **`UpdateInventorySales`** - Updates the inventory levels after a sale is completed by deducting the sold quantity.
+4. **`UpdateInventorySuppliers`** - Updates the inventory levels after a delivery from a supplier by adding the delivered quantity.
+5. **`UpdateProductsDelivery`** - Updates product information after a delivery is recorded, such as adjusting stock levels.
+6. **`UpdateProductsSales`** - Updates product information after a sale is recorded, such as adjusting stock levels.
    
 
 ## License
