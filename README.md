@@ -52,25 +52,25 @@ You have two options to set up the database:
 The following stored procedures are included in the system to manage ordering/automated ordering and analysis.
 
 1. **`CreateOrder`**  
-   - **Description**: Creates a new order for a given product ID.  
-   - **Parameters**:  
-   - `@product_id` (INT): The ID of the product to order.  
-   - `@quantity` (INT, default = 20): The quantity of the product to order.  
-   - **Example**:
+- **Description**: Creates a new order for a given product ID.  
+- **Parameters**:  
+  - `@product_id` (INT): The ID of the product to order.  
+  - `@quantity` (INT, default = 20): The quantity of the product to order.  
+- **Example**:
    ```sql
    EXEC CreateOrder @product_id = 101, @quantity = 50;
 
 2. **`CreateReorderForLowStockProducts`**  
-   **Description**: Automatically creates a reorder for products that are below the minimum threshold stock level.  
-   **Parameters**: None.    
-   **Example**:
+- **Description**: Automatically creates a reorder for products that are below the minimum threshold stock level.  
+- **Parameters**: None.
+- **Example**:
    ```sql
    EXEC CreateReorderForLowStockProducts;
 
 3. **`GenerateWeeklySalesReport`**
-   **Description**: Generates a report summarizing sales by category for the past week (day interval).
-   **Parameters**: None.
-   **Example**:
+- **Description**: Generates a report summarizing sales by category for the past week (day interval).
+- **Parameters**: None.
+- **Example**:
    ```sql
    EXEC GenerateWeeklySalesReport;
    ```
