@@ -24,5 +24,6 @@ This project demonstrates a Sales and Inventory Management System using MS SQL S
    Clone the repository to your local machine:
     ```bash
    git clone https://github.com/tymoteuszmilek/Automated-Sales-and-Inventory-Management-System.git
-   cd your-repository
+   cd Automated-Sales-and-Inventory-Management-System
     ```
+2. **Set Up the Database**:
