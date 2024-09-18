@@ -78,4 +78,4 @@ The following stored procedures are included in the system to manage ordering/au
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/tymoteuszmilek/Automated-Sales-and-Inventory-Management-System/tree/main?tab=MIT-1-ov-file) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/tymoteuszmilek/Automated-Sales-and-Inventory-Management-System/blob/main/LICENSE.md) file for details.
